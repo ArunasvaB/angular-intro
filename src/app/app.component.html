@@ -1,0 +1,26 @@
+<h1 style="text-align: center">Calculator</h1>
+<div id="firstNumber">
+  <label>First Number:</label>
+  <input #first type="number" name="firstNum" [(ngModel)]="value1">
+</div>
+<div id="secondNumber">
+  <label>Second Number:</label>
+  <input #second type="number" id="secondNum" [(ngModel)]="value2">
+</div>
+
+<div style="margin-left: 43%">
+  <table >
+    <tr>
+      <td><button (click)="add()">+</button> </td>
+       <td><button (click)="minus()">-</button> </td>
+        <td><button (click)="multiply()">*</button> </td>
+          <td><button (click)="divide()">÷</button> </td>
+    </tr>
+    <tr>
+      <td><h2>{{result}}</h2></td>
+    </tr>
+  </table>
+
+</div>
+
+
